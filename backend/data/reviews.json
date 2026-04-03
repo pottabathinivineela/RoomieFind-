@@ -1,0 +1,20 @@
+[
+  {
+    "id": "rv1",
+    "reviewerId": "u3",
+    "targetId": "l2",
+    "targetType": "listing",
+    "rating": 5,
+    "comment": "Amazing location, owner was very responsive. Highly recommend!",
+    "createdAt": "2026-04-03T08:04:01.439Z"
+  },
+  {
+    "id": "rv2",
+    "reviewerId": "u4",
+    "targetId": "l3",
+    "targetType": "listing",
+    "rating": 4,
+    "comment": "Great PG, very safe and clean. Meals are good but could be improved.",
+    "createdAt": "2026-04-03T08:04:01.440Z"
+  }
+]

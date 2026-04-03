@@ -1,0 +1,26 @@
+[
+  {
+    "id": "bb0d9d01-1096-4b48-9db0-66bb4a3337f3",
+    "roomId": "591f19e2-1733-4297-8221-d26ffae5d80a_u4",
+    "userA": "591f19e2-1733-4297-8221-d26ffae5d80a",
+    "userB": "u4",
+    "status": "pending",
+    "createdAt": "2026-04-03T08:16:19.280Z"
+  },
+  {
+    "id": "21dfaeef-3512-42d0-86c9-3be35c692edd",
+    "roomId": "591f19e2-1733-4297-8221-d26ffae5d80a_9f849c01-e607-4d25-ba7c-ee138db4908a",
+    "userA": "9f849c01-e607-4d25-ba7c-ee138db4908a",
+    "userB": "591f19e2-1733-4297-8221-d26ffae5d80a",
+    "status": "pending",
+    "createdAt": "2026-04-03T08:21:26.826Z"
+  },
+  {
+    "id": "8e4b41e3-f1c3-485f-86d5-8a1eeb5bb36a",
+    "roomId": "591f19e2-1733-4297-8221-d26ffae5d80a_891ac4a2-2640-46e4-ba95-11f65aef9e9a",
+    "userA": "891ac4a2-2640-46e4-ba95-11f65aef9e9a",
+    "userB": "591f19e2-1733-4297-8221-d26ffae5d80a",
+    "status": "pending",
+    "createdAt": "2026-04-03T08:48:59.278Z"
+  }
+]
