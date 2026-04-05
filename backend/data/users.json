@@ -3,108 +3,60 @@
     "id": "u1",
     "name": "Raj Kumar",
     "email": "raj@example.com",
-    "passwordHash": "$2a$10$tYdtU7kVSbGqy2k4Fx0s4eNbae0dikSdU/j6lO5eXEIlkOzpUYvyO",
+    "passwordHash": "$2a$10$YmZ8NtDTEdC8m5.se4AbEeTvJd51hCBEuXP7BLxYkHwB6Ia4/igdK",
     "phone": "9876543210",
     "role": "owner",
     "isVerified": true,
     "avatar": "",
     "bio": "Property owner with 5+ years experience",
-    "createdAt": "2026-04-03T08:04:01.415Z"
+    "createdAt": "2026-04-03T17:26:17.025Z"
   },
   {
     "id": "u2",
     "name": "Priya Singh",
     "email": "priya@example.com",
-    "passwordHash": "$2a$10$tYdtU7kVSbGqy2k4Fx0s4eNbae0dikSdU/j6lO5eXEIlkOzpUYvyO",
+    "passwordHash": "$2a$10$YmZ8NtDTEdC8m5.se4AbEeTvJd51hCBEuXP7BLxYkHwB6Ia4/igdK",
     "phone": "9876543211",
     "role": "owner",
     "isVerified": true,
     "avatar": "",
     "bio": "Managing 3 properties in Hyderabad",
-    "createdAt": "2026-04-03T08:04:01.415Z"
+    "createdAt": "2026-04-03T17:26:17.025Z"
   },
   {
     "id": "u3",
     "name": "Arjun Mehta",
     "email": "arjun@example.com",
-    "passwordHash": "$2a$10$tYdtU7kVSbGqy2k4Fx0s4eNbae0dikSdU/j6lO5eXEIlkOzpUYvyO",
+    "passwordHash": "$2a$10$YmZ8NtDTEdC8m5.se4AbEeTvJd51hCBEuXP7BLxYkHwB6Ia4/igdK",
     "phone": "9876543212",
     "role": "tenant",
     "isVerified": true,
     "avatar": "",
     "bio": "Software engineer at TCS, looking for a room near Hitech City",
-    "createdAt": "2026-04-03T08:04:01.415Z"
+    "createdAt": "2026-04-03T17:26:17.025Z"
   },
   {
     "id": "u4",
     "name": "Sana Shaikh",
     "email": "sana@example.com",
-    "passwordHash": "$2a$10$tYdtU7kVSbGqy2k4Fx0s4eNbae0dikSdU/j6lO5eXEIlkOzpUYvyO",
+    "passwordHash": "$2a$10$YmZ8NtDTEdC8m5.se4AbEeTvJd51hCBEuXP7BLxYkHwB6Ia4/igdK",
     "phone": "9876543213",
     "role": "tenant",
     "isVerified": false,
     "avatar": "",
     "bio": "MBA student at ISB, need a quiet place to study",
-    "createdAt": "2026-04-03T08:04:01.415Z"
+    "createdAt": "2026-04-03T17:26:17.025Z"
   },
   {
     "id": "u5",
     "name": "Vikram Nair",
     "email": "vikram@example.com",
-    "passwordHash": "$2a$10$tYdtU7kVSbGqy2k4Fx0s4eNbae0dikSdU/j6lO5eXEIlkOzpUYvyO",
+    "passwordHash": "$2a$10$YmZ8NtDTEdC8m5.se4AbEeTvJd51hCBEuXP7BLxYkHwB6Ia4/igdK",
     "phone": "9876543214",
     "role": "tenant",
     "isVerified": true,
     "avatar": "",
     "bio": "Working professional, early riser, non-smoker",
-    "createdAt": "2026-04-03T08:04:01.415Z"
-  },
-  {
-    "id": "591f19e2-1733-4297-8221-d26ffae5d80a",
-    "name": "Vineela Pottabathini",
-    "email": "pottabathinivineela@gmail.com",
-    "phone": "07386297173",
-    "passwordHash": "$2a$12$a03nQ5.S1hd.hXuloTzhoOrZJKzned/IqYtPy3gaewZ3a5/wloBjm",
-    "role": "owner",
-    "isVerified": false,
-    "avatar": "",
-    "bio": "",
-    "createdAt": "2026-04-03T08:09:37.296Z"
-  },
-  {
-    "id": "9f849c01-e607-4d25-ba7c-ee138db4908a",
-    "name": "Mary",
-    "email": "mary@gmail.com",
-    "phone": "6789937829",
-    "passwordHash": "$2a$12$2Q.8b36Eh6.BQPRDOneqJel0ofZFPmeU3RIGTEmgaGsBwUcq..6ZC",
-    "role": "tenant",
-    "isVerified": false,
-    "avatar": "",
-    "bio": "",
-    "createdAt": "2026-04-03T08:18:42.095Z"
-  },
-  {
-    "id": "ad35b6cc-63f1-40b4-acfa-f0b4b5982b67",
-    "name": "Anand",
-    "email": "anand@gmail.com",
-    "phone": "9746578927",
-    "passwordHash": "$2a$12$MZ1Qiz/favyJ9WqZY7qoseCDqlhNEMjwutuzjPMf2GHM/l/nYnqrS",
-    "role": "tenant",
-    "isVerified": false,
-    "avatar": "",
-    "bio": "",
-    "createdAt": "2026-04-03T08:22:45.845Z"
-  },
-  {
-    "id": "891ac4a2-2640-46e4-ba95-11f65aef9e9a",
-    "name": "rosy",
-    "email": "rosy@gmail.com",
-    "phone": "7867436753",
-    "passwordHash": "$2a$12$Q1FwzhkK7/JRSt/QUCshe.FEyqymVIpMqG/aGUOYmDZjTMfx7jqfO",
-    "role": "tenant",
-    "isVerified": false,
-    "avatar": "",
-    "bio": "",
-    "createdAt": "2026-04-03T08:47:43.926Z"
+    "createdAt": "2026-04-03T17:26:17.025Z"
   }
 ]
