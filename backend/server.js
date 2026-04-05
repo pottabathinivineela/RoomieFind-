@@ -24,11 +24,11 @@ const app = express();
 // Allow your Vercel frontend (and localhost for local dev).
 // Add any extra Vercel preview URLs to the array as needed.
 const ALLOWED_ORIGINS = [
-  "https://roomie-find-ten.vercel.app",       // ← replace with your real Vercel URL
+  "https://roomie-find-ten.vercel.app",
   "https://roomiefind.vercel.app",
-  /https:\/\/roomie-find-.*\.vercel\.app/, // preview deployments
-  "http://localhost:3000",                 // local dev (Vite default)
-  "http://localhost:5173",                 // local dev (alternate Vite port)
+  /https:\/\/roomie-find-.*\.vercel\.app/,
+  "http://localhost:3000",
+  "http://localhost:5173"
 ];
 
 app.use(
@@ -63,10 +63,10 @@ app.use("/api", authRouter);            // POST /api/register, POST /api/login
 app.use("/api/auth", authRouter);       // GET  /api/auth/me
 
 // Add your other routers here:
-// app.use("/api/listings", require("./routes/listings"));
-// app.use("/api/matches",  require("./routes/matches"));
-// app.use("/api/chat",     require("./routes/chat"));
-// app.use("/api/reviews",  require("./routes/reviews"));
+ app.use("/api/listings", require("./routes/listings"));
+ app.use("/api/matches",  require("./routes/matches"));
+ app.use("/api/chat",     require("./routes/chat"));
+ app.use("/api/reviews",  require("./routes/reviews"));
 
 // ── 4. Health check (Render ping / uptime monitors) ──────────
 app.get("/api/health", (_req, res) =>
