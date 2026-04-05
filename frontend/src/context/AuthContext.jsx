@@ -41,7 +41,7 @@ export function AuthProvider({ children }) {
       return;
     }
 
-    axios.defaults.headers.common["Authorization"] = `Bearer ${storedToken}`;
+    axios.defaults.headers.common["Authorization"] = `Bearer ${Token}`;
 
     // GET /api/auth/me  →  resolves to  API_BASE + /api/auth/me
     axios
