@@ -19,7 +19,7 @@ export function AuthProvider({ children }) {
   }, []);
 
   const login = async (email, password) => {
-    const { data } = await axios.post("/api/auth/login", { email, password });
+    const { data } = await axios.post("https://roomiefind.onrender.com/api/login", {email,password});
     localStorage.setItem("token", data.token);
     axios.defaults.headers.common["Authorization"] = `Bearer ${data.token}`;
     setUser(data.user);
@@ -27,7 +27,7 @@ export function AuthProvider({ children }) {
   };
 
   const register = async (form) => {
-    const { data } = await axios.post("/api/auth/register", form);
+    const { data } = await axios.post("https://roomiefind.onrender.com/api/register", form);
     localStorage.setItem("token", data.token);
     axios.defaults.headers.common["Authorization"] = `Bearer ${data.token}`;
     setUser(data.user);
