@@ -25,7 +25,17 @@ export default function AddListing() {
 
   const submit = async (e) => {
     e.preventDefault(); setError(""); setLoading(true);
-    try { const { data } = await axios.post("/api/listings", form); navigate(`/listings/${data.id}`); }
+    try { const token = localStorage.getItem("token");
+
+const { data } = await axios.post(
+  "https://roomiefind.onrender.com/api/listings",
+  form,
+  {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  }
+); }
     catch (err) { setError(err.response?.data?.error || "Failed to create listing"); }
     finally { setLoading(false); }
   };
