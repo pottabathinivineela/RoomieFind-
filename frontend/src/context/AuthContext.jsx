@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import axios from "axios";
-
+const BASE_URL="https://roomiefind.onrender.com";
 const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
@@ -11,7 +11,7 @@ export function AuthProvider({ children }) {
     const token = localStorage.getItem("token");
     if (token) {
       axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
-      axios.get("/api/auth/me").then((r) => setUser(r.data)).catch(() => {
+      axios.get("https://roomiefind.onrender.com/api/auth/me").then((r) => setUser(r.data)).catch(() => {
         localStorage.removeItem("token");
         delete axios.defaults.headers.common["Authorization"];
       }).finally(() => setLoading(false));
