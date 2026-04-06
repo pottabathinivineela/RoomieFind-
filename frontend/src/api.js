@@ -20,7 +20,7 @@
 
 import axios from "axios";
 
-export const API_BASE = "https://roomiefind.onrender.com";
+export const API_BASE = "https://roomiefind.onrender.com/api";
 
 const api = axios.create({
   baseURL: API_BASE,
