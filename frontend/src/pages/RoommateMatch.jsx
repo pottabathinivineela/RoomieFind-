@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import api from "../api";
 
 const SCORE_CLASS = (s) => s >= 75 ? "score-high" : s >= 50 ? "score-med" : "score-low";
 const SCORE_LABEL = (s) => s >= 75 ? "Great match" : s >= 50 ? "Good match" : "Low match";
@@ -17,25 +18,25 @@ export default function RoommateMatch() {
   const [success, setSuccess] = useState("");
 
   useEffect(() => {
-    axios.get("/api/matches/profile").then((r) => {
+    api.get("/matches/profile").then((r) => {
       if (r.data) { setProfile(r.data); setForm({ ...form, ...r.data }); }
     }).catch(() => {}).finally(() => setLoading(false));
   }, []);
 
   const fetchSuggestions = async () => {
     setSugLoading(true);
-    try { const { data } = await axios.get("/api/matches/suggestions"); setSuggestions(data); }
+    try { const { data } = await api.get("/matches/suggestions"); setSuggestions(data); }
     catch { } finally { setSugLoading(false); }
   };
 
   const saveProfile = async (e) => {
     e.preventDefault(); setSaving(true); setSuccess("");
-    try { const { data } = await axios.post("/api/matches/profile", form); setProfile(data); setSuccess("Profile saved! Switch to Matches tab."); }
+    try { const { data } = await api.post("/matches/profile", form); setProfile(data); setSuccess("Profile saved! Switch to Matches tab."); }
     catch { } finally { setSaving(false); }
   };
 
   const connect = async (userId) => {
-    try { await axios.post(`/api/matches/connect/${userId}`); navigate("/chat"); }
+    try { await api.post(`/matches/connect/${userId}`); navigate("/chat"); }
     catch { navigate("/chat"); }
   };
 
