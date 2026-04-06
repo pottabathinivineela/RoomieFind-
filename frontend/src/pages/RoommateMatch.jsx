@@ -17,11 +17,28 @@ export default function RoommateMatch() {
   const [saving, setSaving] = useState(false);
   const [success, setSuccess] = useState("");
 
-  useEffect(() => {
-    api.get("/matches/profile").then((r) => {
-      if (r.data) { setProfile(r.data); setForm({ ...form, ...r.data }); }
-    }).catch(() => {}).finally(() => setLoading(false));
-  }, []);
+ useEffect(() => {
+  const fetchProfile = async () => {
+    try {
+      const r = await api.get("/matches/profile");
+
+      // ✅ IMPORTANT CHECK
+      if (r.data && !r.data.error) {
+        setProfile(r.data);
+      } else {
+        console.log("API ERROR:", r.data);
+      }
+
+    } catch (err) {
+      console.error("ERROR:", err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+
+  fetchProfile();
+}, []);
 
   const fetchSuggestions = async () => {
     setSugLoading(true);
@@ -40,7 +57,10 @@ export default function RoommateMatch() {
     catch { navigate("/chat"); }
   };
 
-  if (loading) return <div className="loading">Loading...</div>;
+  if (loading) return <div>Loading...</div>;
+  if (!profile) {
+  return <div>No profile data available</div>;
+}
 
   return (
     <div className="page">
